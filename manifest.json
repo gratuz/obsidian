@@ -1,0 +1,9 @@
+{
+  "id": "notes-to-self",
+  "name": "Notes to self",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "Capture notes to self while writing, and review them all on one page.",
+  "author": "Gratus Devanesan",
+  "isDesktopOnly": false
+}

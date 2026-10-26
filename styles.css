@@ -1,0 +1,98 @@
+.nts-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--size-4-2);
+  margin-bottom: var(--size-4-3);
+}
+
+.nts-filter {
+  display: flex;
+}
+
+.nts-filter button {
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.nts-filter button:first-child {
+  border-radius: var(--radius-s) 0 0 var(--radius-s);
+}
+
+.nts-filter button:last-child {
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+}
+
+.nts-filter button.is-active {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.nts-search {
+  flex: 1;
+  min-width: 8em;
+}
+
+.nts-count,
+.nts-empty {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+.nts-group {
+  margin-bottom: var(--size-4-3);
+}
+
+.nts-group-header {
+  display: flex;
+  align-items: center;
+  gap: var(--size-4-1);
+  font-weight: var(--font-semibold);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.nts-group-header:hover {
+  color: var(--text-normal);
+}
+
+.nts-group-header svg {
+  width: var(--icon-s);
+  height: var(--icon-s);
+}
+
+.nts-list ul.contains-task-list {
+  margin: var(--size-4-1) 0;
+  padding-inline-start: var(--size-4-5);
+}
+
+.nts-text {
+  cursor: pointer;
+}
+
+.nts-text:hover {
+  text-decoration: underline;
+}
+
+.nts-item.is-checked .nts-text {
+  color: var(--text-faint);
+  text-decoration: line-through;
+}
+
+.nts-topic {
+  margin-inline-start: var(--size-4-2);
+  padding: 0 var(--size-4-2);
+  border-radius: var(--radius-l);
+  background-color: var(--background-modifier-hover);
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.nts-capture .setting-item-info {
+  display: none;
+}
+
+.nts-capture .setting-item-control input {
+  width: 100%;
+}
